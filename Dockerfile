@@ -7,4 +7,4 @@ RUN apk add --no-cache --update build-base ruby ruby-dev libxml2-dev mariadb-cli
 RUN mkdir -p /backup
 WORKDIR /backup
 
-CMD ls -al
+CMD backup perform -t 
